@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> LOVE FUNKS </title>
+    <meta name="description" content="MINT PHASE IS LIVE">
+    <meta property="og:image" content="/images/funks.png">
+    <link rel="stylesheet" href="css/css-style.css">
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <link rel="icon" href="./icon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__row">
+
+                    <div class="header__logo">
+                        <a href="https://opensea.io/collection/love-funks" target="_blank"><img src="images/img-logo.png" alt="logo site"></a>
+                    </div>
+
+                    <div class="header__center">
+                        <a href="https://etherscan.io/address/0x9B2e05582Ee21Ff5D3B38Bb83d4bbB4106367B88" target="_blank" class="head-etherscan"></a>
+                        <a href="https://opensea.io/collection/love-funks" target="_blank" class="head-opensea"></a>
+                        <a href="https://twitter.com/FunksTokyo" target="_blank" class="head-twitter"></a>
+                        <a href="https://discord.gg/SAXc4qre" target="_blank" class="head-discord"></a>
+                    </div>
+
+                    <div class="header__right">
+
+                        <button class="btn-head" id="connect_button"> connect wallet </button>
+
+                    </div>
+
+                </div>
+            </div>
+        </header>
+        
+        <div class="main">
+            <div class="container">
+                <div class="main__row">
+                    <div class="main__left">
+
+                        <p class="form-text2"> TOTAL MINTED </p> 
+                        <p class="number" id="tokens_available"> CONNECT </p> 
+                        <p class="form-text" id="phase"> PUBLIC MINT | MAX 25 PER WALLET </p> 
+                        <p class="form-text" id="price"> MINT COST 0.003eth EACH </p> <br>
+                        <p class="form-text" id="cost"> TOTAL COST: 0.00eth </p> <br>
+
+                        <div class="form-row">
+                            
+                            <div class="form-row-amount">
+                                <button class="btn-2" id="mintDW" onClick="decrementMintAmount()"> - </button>
+                                    <input type="text" placeholder="amount" class="in-form js-in-number" id="tokens_amount">
+                                <button class="btn-2" id="mintUP" onClick="incrementMintAmount()"> + </button>
+                            </div>
+                            
+
+                            <div class="form-row-mint">
+
+                                <button class="btn-form" id="mint_button"> MINT </button>
+
+                            </div>
+                            
+                        </div><br>
+                        
+                        <div class="form-row-text">
+                            <div class="form-text">                        
+                                <p> "Love Funks" is 6,666 pfp NFTs.
+                                    Love Funks melds themes of love, freedom, and liberty through handcrafted layers created with an iPad pen.
+                                    Each piece, rendered one-of-a-kind NFTs from Python scripting, is minted as an ERC-721 token on the Ethereum blockchain, subtly championing the cause of peace.
+                                    </p>
+                                
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="main__right"> <img src="images/funks.png"> </div>
+
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__row">
+                    <div class="text-center copyright">
+                        <span> © 2024 FUNKS TOKIO. All rights reserved! </span>
+                      </div>
+                </div>
+            </div>
+        </footer>
+        
+    </div>
+	<script src="js/dist-web3.min.js"></script>
+    <script src="js/7663-js-sale.js"></script>
+    <script src="js/8305-js-main.js"></script>
+
+</body>
+
+</html>
