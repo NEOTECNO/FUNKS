@@ -81,13 +81,8 @@ const mint = async (e)=> {
           const contract = new web3.eth.Contract(abi, CONTRACT_ADDR, {gas: 3000000});
 
           const cost = await contract.methods.cost().call();
-		  freeMintClaimed = await contract.methods.freeMintClaimed(account).call();
 
-		  if (!freeMintClaimed) {
-			value = (cost * _mintAmount) - cost;
-		  } else {
-			value = cost * _mintAmount;
-		  }
+			    value = cost * _mintAmount;
 
           const gas = Math.round( await contract.methods.mint(_mintAmount).estimateGas({value: value.toString(), from: accounts[0]}) * 1.1 )
           result = await contract.methods.mint(_mintAmount).send({value: value.toString(), from: accounts[0], gas: gas})
