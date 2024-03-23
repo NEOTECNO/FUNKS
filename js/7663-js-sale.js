@@ -120,7 +120,7 @@ const connect = async (e)=> {
 
       if (paused) { document.getElementById("phase").innerHTML = "CONTRACT IS PAUSED"; }
 		else { 	document.getElementById("phase").innerHTML = "MINT PHASE | MAX " + maxPerTx + " PER WALLET";
-		document.getElementById("price").innerHTML = "MINT COST 0.003eth EACH";
+		document.getElementById("price").innerHTML = "MINT COST 0.001eth EACH";
 		}
 
 	  if (totalSupply < 7777) {
